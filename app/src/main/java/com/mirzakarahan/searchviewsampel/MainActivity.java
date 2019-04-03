@@ -16,17 +16,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         searchView = findViewById(R.id.searchView);
-        searchView.setBtnSortEnable(true);
         searchView.setBtnSearchEnable(true);
+        searchView.setBtnSortEnable(true);
         searchView.setListener(new ISearchView() {
             @Override
             public void onSearch(String data) {
-                Toast.makeText(getApplicationContext(),data,Toast).show();
+                Toast.makeText(getApplicationContext(),data,Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onSort() {
-                //Open Sort Modal vs.
+                //Open sort modal dialog vs.
             }
         });
     }
