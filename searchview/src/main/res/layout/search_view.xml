@@ -9,7 +9,7 @@
         android:id="@+id/edtSearchCategory"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:hint="Arama"
+        android:hint="Search.."
         android:inputType="textFilter"
         android:selectAllOnFocus="true"
         android:singleLine="true" />
