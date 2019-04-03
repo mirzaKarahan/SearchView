@@ -31,7 +31,7 @@ public class SearchView extends RelativeLayout {
             @Override
             public void onClick(View v) {
                 if (iSearchView != null && edtSearch.getText().length()>2){
-                    iSearchView.onSearch();
+                    iSearchView.onSearch(getSearch());
                 }
             }
         });
@@ -46,7 +46,7 @@ public class SearchView extends RelativeLayout {
     }
 
 
-    public void setiSearchBar(ISearchView iSearchView) {
+    public void setListener(ISearchView iSearchView) {
         this.iSearchView = iSearchView;
     }
 

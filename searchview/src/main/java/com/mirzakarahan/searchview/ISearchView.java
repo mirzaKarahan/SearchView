@@ -1,6 +1,6 @@
 package com.mirzakarahan.searchview;
 
-interface ISearchView {
-    void onSearch();
+public interface ISearchView {
+    void onSearch(String data);
     void onSort();
 }
